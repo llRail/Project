@@ -1,4 +1,4 @@
-/* Global Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Background & General Layout */
+
 body {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   color: #fff;
@@ -21,11 +21,11 @@ body {
   align-items: stretch;
 }
 
-/* Main App Layout */
+
 .app-layout {
   display: flex;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+  width: 100vw; 
+  height: 100vh; 
   background-color: #fff;
   border-radius: 0;
   box-shadow: none;
@@ -64,7 +64,7 @@ body {
   transform: translateX(5px);
 }
 
-/* Main Content */
+
 .content {
   flex: 1;
   padding: 40px;
@@ -75,11 +75,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%; /* Ensures full height usage */
-  padding-left: 40px; /* Adds left padding to avoid content being too close to the left edge */
+  height: 100%; 
+  padding-left: 40px; 
 }
 
-/* Header Styles */
+
 h1 {
   text-align: center;
   font-size: 36px;
@@ -95,7 +95,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* Progress Bar Styles */
+/* Progress Bar */
 .progress-bar-container {
   display: flex;
   height: 20px;
@@ -113,14 +113,14 @@ h1 {
 }
 
 .progress-segment.correct {
-  background-color: #2ecc71; /* green */
+  background-color: #2ecc71; /* correct question */
 }
 
 .progress-segment.incorrect {
-  background-color: #e74c3c; /* red */
+  background-color: #e74c3c; /* wrong question */
 }
 
-/* Navbar */
+/* Navigation bar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -130,7 +130,7 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Quiz Section */
+/* Quiz */
 .quiz-container {
   max-width: 700px;
   margin: 30px auto;
@@ -148,12 +148,12 @@ h1 {
   color: #2c3e50;
 }
 
-/* Answer Buttons */
+/* Answer */
 .answer-button {
   display: block;
-  width: 100%;   /* Ensures the buttons take up the full width */
+  width: 100%;   
   padding: 16px 30px;
-  margin: 12px 0;  /* Adds space between buttons */
+  margin: 12px 0;  
   font-size: 20px;
   font-weight: 500;
   color: white;
@@ -228,7 +228,7 @@ h1 {
   color: #3498db;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   font-size: 16px;
@@ -237,7 +237,7 @@ footer {
   color: white;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .app-layout {
     flex-direction: column;
@@ -258,8 +258,8 @@ footer {
 
   .content {
     padding: 20px;
-    margin-left: 0; /* Remove the margin-left */
-    height: auto; /* Ensures content doesn't get cut off */
+    margin-left: 0; 
+    height: auto; 
   }
 
   .quiz-container, .study-material {
